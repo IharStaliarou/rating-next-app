@@ -1,0 +1,114 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "declaration-empty-line-before": null,
+    "order/properties-order": [
+      [
+        {
+          "groupName": "Display & Positioning",
+          "emptyLineBefore": "always",
+          "properties": [
+            "display",
+            "position",
+            "top",
+            "right",
+            "bottom",
+            "left",
+            "z-index",
+            "flex-direction",
+            "flex-wrap",
+            "justify-content",
+            "align-items",
+            "align-content",
+            "order"
+          ]
+        },
+        {
+          "groupName": "Sizing",
+          "emptyLineBefore": "always",
+          "properties": [
+            "width",
+            "min-width",
+            "max-width",
+            "height",
+            "min-height",
+            "max-height"
+          ]
+        },
+        {
+          "groupName": "Spacing",
+          "emptyLineBefore": "always",
+          "properties": [
+            "padding",
+            "padding-top",
+            "padding-right",
+            "padding-bottom",
+            "padding-left",
+            "margin",
+            "margin-top",
+            "margin-right",
+            "margin-bottom",
+            "margin-left"
+          ]
+        },
+        {
+          "groupName": "Colors",
+          "emptyLineBefore": "always",
+          "properties": [
+            "background",
+            "background-color",
+            "background-image",
+            "background-position",
+            "background-size",
+            "background-repeat",
+            "background-attachment",
+            "background-clip",
+            "background-origin",
+            "background-blend-mode",
+            "color"
+          ]
+        },
+        {
+          "groupName": "Typography",
+          "emptyLineBefore": "always",
+          "properties": [
+            "font",
+            "font-family",
+            "font-size",
+            "font-weight",
+            "font-style",
+            "font-variant",
+            "line-height",
+            "letter-spacing",
+            "text-align",
+            "text-transform",
+            "text-decoration",
+            "white-space",
+            "word-break"
+          ]
+        },
+        {
+          "groupName": "Other",
+          "emptyLineBefore": "always",
+          "properties": [
+            "overflow",
+            "cursor",
+            "opacity",
+            "box-shadow",
+            "transition",
+            "transform",
+            "animation"
+          ]
+        }
+      ],
+      {
+        "unspecified": "bottomAlphabetical"
+      }
+    ]
+  }
+}
